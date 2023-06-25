@@ -1,0 +1,105 @@
+.bg-transparent {
+  background: transparent;
+}
+
+.h-85 {
+  height: 87%;
+}
+
+.line {
+  background-image: url(../src/assets/bg_community.png);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.1;
+  animation: line 14s infinite;
+}
+
+@keyframes line {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 85%;
+  }
+}
+
+.bg_roadmap {
+  background-image: url(../src/assets/bg_buy.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.container_1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.container_1>div {
+  width: 8vw;
+  height: 12vw;
+  position: relative;
+}
+
+.container_1>div.forward::before,
+.container_1>div.backward::before {
+
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 100%;
+  background: #04936E;
+  border-radius: 2px;
+}
+
+.container_1>div.forward::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.container_1>div.backward::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.container_2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.container_2>div {
+  width: 5vw;
+  height: 5vw;
+  position: relative;
+}
+
+.container_2>div.forward::before,
+.container_2>div.backward::before {
+
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 100%;
+  background: #04936E;
+  border-radius: 2px;
+}
+
+.container_2>div.forward::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.container_2>div.backward::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
