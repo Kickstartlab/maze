@@ -1,6 +1,8 @@
 import React from 'react'
 import twitter from '../assets/twitter.png';
 import telegram from '../assets/telegram.png';
+import medium from '../assets/medium.png';
+
 
 
 export default function Footer() {
@@ -34,12 +36,16 @@ export default function Footer() {
 
           <div className='flex justify-center gap-6 items-center lg:mt-0 mt-6'>
 
-            <a href='/'>
+            <a href='https://twitter.com/mazecoin_eth'>
               <img src={twitter} alt="Twitter" className='' />
             </a>
 
-            <a href='/'>
+            <a href='https://t.me/Mazecoin'>
               <img src={telegram} alt="Facebook" className='' />
+            </a>
+
+            <a href='https://medium.com/@themazecoin/cryptocurrency-investment-is-like-a-complex-maze-and-we-are-the-runners-navigating-through-it-25bafa5e5fa2'>
+              <img src={medium} alt="Facebook" className='w-12 fill-green-50' />
             </a>
 
           </div>

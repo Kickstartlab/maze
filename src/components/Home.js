@@ -57,7 +57,7 @@ export default function Home() {
                                 </p>
 
                                 <button className='uppercase font-bold rounded-full bg-green-100 py-3 px-5'>
-                                    Get Started
+                                    Audit
                                 </button>
                             </div>
 
@@ -69,8 +69,13 @@ export default function Home() {
                             </div>
 
                             <div data-aos='slide-left' className='space-y-8 lg:block hidden'>
-                                <a href='/'><img src={twitter} alt='Twitter'></img></a>
-                                <a href='/'><img src={telegram} alt='Telegram'></img></a>
+                                <a href='https://twitter.com/mazecoin_eth'>
+                                    <img src={twitter} alt="Twitter" className='' />
+                                </a>
+
+                                <a href='https://t.me/Mazecoin'>
+                                    <img src={telegram} alt="Facebook" className='' />
+                                </a>
                             </div>
 
                         </div>
