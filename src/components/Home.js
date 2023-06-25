@@ -46,7 +46,7 @@ export default function Home() {
                     <Menu />
                     <div className='lg:py-20 py-12 space-y-8'>
                         <h1 className='font-questrial text-center lg:text-6xl text-3xl'>
-                            u will be  <span className='font-rage text-green-50'>amazed</span>  by Maze
+                            u will be  <span className='font-rage text-green-50'>amazed</span>  by the Maze
                         </h1>
 
                         <div className="lg:flex justify-between items-center space-y-8">
