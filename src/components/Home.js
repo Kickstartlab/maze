@@ -103,7 +103,7 @@ export default function Home() {
 
                         <h2 data-aos='slide-up' className='md:text-5xl text-3xl font-extrabold text-green-50'>
                             maze ($MAZE)<br></br>
-                            "u will be amazed by Maze"
+                            "u will be amazed by the Maze"
 
                         </h2>
 
