@@ -17,7 +17,7 @@ module.exports = {
         "50": "#0DF3B8",
         "100": "#04936E",
       },
-    },
+    },  
     fontFamily: {
       'mulish': ["'Mulish', sans-serif"],
       'questrial': ["'Questrial', sans-serif"],

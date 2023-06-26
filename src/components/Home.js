@@ -10,7 +10,7 @@ import line_1 from '../assets/line_1.png';
 import roadmap from '../assets/roadmap.png';
 import roadmap_1 from '../assets/roadmap_1.png';
 import top from '../assets/top.png';
-import token from '../assets/token.png';
+import token_1 from '../assets/token_1.png';
 import twitter from '../assets/twitter.png';
 import telegram from '../assets/telegram.png';
 import line from '../assets/line.png';
@@ -260,7 +260,10 @@ export default function Home() {
                             </div>
 
                             <div data-aos="zoom-in" className="md:mt-0 mt-12">
-                                <img src={token} alt="Logo" className='' />
+                                <img src={token_1} alt="Logo" className='' />
+                                {/* <h3 className='text-center lg:text-7xl text-5xl font-extrabold text-green-50 bg-black-100 w-28 absolute lg:-mt-60 -mt-44 lg:ml-40 ml-28 translate-x-1'>
+                                    0/0
+                                </h3> */}
                             </div>
 
                         </div>
