@@ -140,7 +140,7 @@ export default function Home() {
                             </h2>
 
                             <p className='pt-6 pb-4 lg:leading-loose'>
-                                Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.
+                                Our maze community is a source of pride for us. We believe in building a strong community through trust and mutual support. Together, we will navigate the complexities of the maze, sharing knowledge and experiences, and empowering one another to achieve success. Join us and be a part of our community.
                             </p>
 
                         </div>
