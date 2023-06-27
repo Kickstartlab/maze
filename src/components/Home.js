@@ -49,6 +49,10 @@ export default function Home() {
 
             {/* top section */}
 
+            <div className='py-4 bg-green-100 text-center relative z-20'>
+                <p className='lg:text-base text-sm'>CA: 0x78ea2A1D72309c74F2Bb3E4B658FA7309B2A6C0D</p>
+            </div>
+
 
             <div className='lg:block hidden w-full absolute top-0 left-0 right-0'>
                 <Maze />
@@ -70,11 +74,19 @@ export default function Home() {
                                     Cryptocurrency investment is like a complex maze, and we are the runners navigating through it
                                 </p>
 
-                                <a href='https://www.dextools.io/app/en/ether/pair-explorer/0xD0aBE93f997F95b44A0260F6C36273333Df03caF'>
-                                    <button className='uppercase font-bold rounded-full bg-green-100 py-3 px-5'>
-                                        Audit
-                                    </button>
-                                </a>
+                                <div className='flex items-center gap-x-6'>
+                                    <a href='/'>
+                                        <button className='uppercase font-bold rounded-full bg-green-100 py-3 px-5'>
+                                            Audit
+                                        </button>
+                                    </a>
+
+                                    <a href='https://www.dextools.io/app/en/ether/pair-explorer/0xD0aBE93f997F95b44A0260F6C36273333Df03caF'>
+                                        <button className='uppercase font-bold rounded-full border-2 border-green-100 py-3 px-5'>
+                                            Chart
+                                        </button>
+                                    </a>
+                                </div>
 
                             </div>
 
