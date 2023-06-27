@@ -16,7 +16,7 @@ export default function Footer() {
             Don't miss out, Stay updated
           </h2>
 
-          <div className="py-1 pl-6 pr-1 lg:w-7/12 w-full lg:bg-black-50 lg:space-y-0 space-y-5 lg:flex items-center justify-between rounded-full">
+          {/* <div className="py-1 pl-6 pr-1 lg:w-7/12 w-full lg:bg-black-50 lg:space-y-0 space-y-5 lg:flex items-center justify-between rounded-full">
             <input type="email" placeholder="Enter your email" id="email" required="" className="lg:p-0 p-5 lg:rounded-none rounded-full bg-black-50 focus:ring-0 focus:outline-none lg:w-7/12 w-full" />
 
             <button className='text-white-100 lg:px-12 px-2 lg:py-3 py-2 bg-green-100 rounded-full'>
@@ -29,10 +29,10 @@ export default function Footer() {
               Don’t hesitate to subscribe to latest news about ICo markets as well as crucial financial<br></br> knowledge to become successful investors globally
             </p>
 
-            {/* <p className='pt-2'>
+            <p className='pt-2'>
               Get in touch: <a href='mailto:decentraprotocolteam@gmail.com' className='text-purple-100'>decentraprotocolteam@gmail.com</a>
-            </p> */}
-          </div>
+            </p>
+          </div> */}
 
           <div className='flex justify-center gap-6 items-center lg:mt-0 mt-6'>
 
@@ -50,9 +50,10 @@ export default function Footer() {
 
           </div>
 
+          <a href='mailto:mazecointeam@gmail.com' className='text-green-50 hover:underline'>mazecointeam@gmail.com</a>
         </div>
 
-        <p className='pt-12 pb-6 text-center'>© {new Date().getFullYear()} All rights reserved by maze.</p>
+        <p className='py-6 text-center'>© {new Date().getFullYear()} All rights reserved by maze.</p>
       </footer>
     </div>
 

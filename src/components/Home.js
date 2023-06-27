@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
 import about from '../assets/about.png';
@@ -10,6 +10,7 @@ import line_1 from '../assets/line_1.png';
 import roadmap from '../assets/roadmap.png';
 import roadmap_1 from '../assets/roadmap_1.png';
 import top from '../assets/top.png';
+import audit from '../assets/audit.png';
 import token_1 from '../assets/token_1.png';
 import twitter from '../assets/twitter.png';
 import telegram from '../assets/telegram.png';
@@ -29,6 +30,19 @@ export default function Home() {
         });
         Aos.refresh();
     }, [])
+
+    const [copySuccess, setCopySuccess] = useState('');
+
+    // your function to copy here
+
+    const copyToClipBoard = async copyMe => {
+        try {
+            await navigator.clipboard.writeText(copyMe);
+            setCopySuccess('Copied!');
+        } catch (err) {
+            setCopySuccess('Failed to copy!');
+        }
+    };
 
     return (
         <div className="bg-black-100 font-mulish overflow-hidden text-white-100">
@@ -51,14 +65,17 @@ export default function Home() {
 
                         <div className="lg:flex justify-between items-center space-y-8">
 
-                            <div data-aos='slide-right' className='lg:w-2/12 space-y-6'>
-                                <p>
+                            <div data-aos='slide-right' className='lg:w-2/12'>
+                                <p className='pb-6'>
                                     Cryptocurrency investment is like a complex maze, and we are the runners navigating through it
                                 </p>
 
-                                <button className='uppercase font-bold rounded-full bg-green-100 py-3 px-5'>
-                                    Audit
-                                </button>
+                                <a href='https://www.dextools.io/app/en/ether/pair-explorer/0xD0aBE93f997F95b44A0260F6C36273333Df03caF'>
+                                    <button className='uppercase font-bold rounded-full bg-green-100 py-3 px-5'>
+                                        Audit
+                                    </button>
+                                </a>
+
                             </div>
 
                             <div data-aos='zoom-in' className=''>
@@ -214,9 +231,12 @@ export default function Home() {
 
                     </div>
 
-                    <button className='px-6 py-3 border-4 border-black-50 bg-green-100 font-bold hover-bg-transparent text-white-100 rounded-full mt-12 flex mx-auto'>
+                    <button onClick={() => copyToClipBoard('0x78ea2A1D72309c74F2Bb3E4B658FA7309B2A6C0D')} className='px-6 py-3 border-4 border-black-50 bg-green-100 font-bold hover-bg-transparent text-white-100 rounded-full mt-12 flex mx-auto'>
                         Contract Address
                     </button>
+                    <span tooltip='click to copy' className="text-white-100 left-0 right-0 text-center mt-1 absolute duration-300">
+                        {copySuccess}
+                    </span>
                 </div>
             </div>
 
@@ -279,6 +299,14 @@ export default function Home() {
                 <div id='roadmap' className="px-5 lg:py-24 py-6">
                     <div className='container mx-auto'>
 
+                        <div className="lg:flex block justify-center items-center gap-x-8 pb-12 lg:space-y-0 space-y-8">
+                            <h2 className='md:text-5xl text-3xl font-extrabold text-green-50 uppercase text-center'>
+                                Auditing Partner
+                            </h2>
+
+                            <img src={audit} alt="audit" className='lg:block flex lg:mx-0 mx-auto' />
+                        </div>
+
                         <div className='space-y-8 text-center mb-16'>
 
                             <p data-aos='slide-up' className='text-green-50 uppercase tracking-wider'>ROAD MAP</p>
@@ -289,7 +317,7 @@ export default function Home() {
                         </div>
 
                         <div className='lg:block hidden'>
-                            <div data-aos='slide-down' className='space-y-6 absolute ml-40 mt-8'>
+                            <div data-aos='fade-down' className='space-y-6 absolute ml-40 mt-8'>
                                 <div className='flex items-center gap-x-4'>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="15" cy="15" r="15" fill="#60DDB3" />
@@ -311,7 +339,7 @@ export default function Home() {
                                 </ul>
                             </div>
 
-                            <div data-aos='slide-down' className='space-y-6 absolute right-1/3 -mr-24 mt-6'>
+                            <div data-aos='fade-down' className='space-y-6 absolute right-1/3 -mr-24 mt-6'>
                                 <div className='flex items-center gap-x-4'>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="15" cy="15" r="15" fill="#60DDB3" />
